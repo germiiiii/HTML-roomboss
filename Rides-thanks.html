@@ -21,20 +21,21 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-image: url(https://www.rhythmjapan.com/wp-content/uploads/fixed.jpg);
-            
         }
 
         .banner {
             position: relative;
-            border-radius: 8px 8px 0 0;
+            border-radius: 0 0 8px 8px;
             overflow: hidden;
-            
         }
 
         .banner img {
-            width: 100%;
+            max-width: 600px;
+            max-height: 600px;
+            width: auto;
             height: auto;
             display: block;
+            margin: 0 auto;
         }
 
         .banner-header {
@@ -55,21 +56,22 @@
         .content {
             padding: 20px;
             background-color: #f9f9f9; /* Lighter gray */
-            border-radius: 0 0 10px 10px;
+            border-radius: 10px;
             background-image: url(https://www.rhythmjapan.com/wp-content/uploads/fixed.jpg);
-           
         }
 
         .content h2 {
             color: #000000;
+            border-radius: 10px;
+            
         }
 
         .content p {
-            color: #666;
+            color: #000000;
         }
 
         .email {
-            background-color: #8d8d8d2a;
+            background-color: #ffffff2a;
             border-radius: 10px;
             padding: 20px;
             margin: 10px;
@@ -91,15 +93,36 @@
         .button:hover {
             background-color: #008a58; /* Darker shade of TripAdvisor green on hover */
         }
+
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #000; /* Change the color as per your design */
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #ff0000; /* Change to the desired hover color */
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="banner">
             <div class="banner-header">
-                <h2 class="banner-title">How was experience with us?</h2>
+                <h2 class="banner-title">How was your experience with us?</h2>
             </div>
-            <img src="https://www.rhythmjapan.com/wp-content/uploads/03.11.23_Rhythm_Rides__B3A0804_JW-scaled-1.webp" alt="Rhythm Rides Banner">
+            <div class="banner">
+              
+            </div>
             <div class="content">
                 <h2>Dear _$gfname$_,</h2>
                 <div class="email">
@@ -108,11 +131,16 @@
                     <p>Thanks again for choosing to spend your time in Niseko with Rhythm Rides.</p>
                     <p>Kind regards,</p>
                     <p>Tareesa Straatmans<br>Rides Director</p>
-                    <img src="https://www.rhythmjapan.com/wp-content/uploads/rhythm-logo-dark.png" alt="Rides Director Photo" style="width: 200px; height: auto; display: block; margin: 10px auto;">
+                    <div>
+                        <img src="https://www.rhythmjapan.com/wp-content/uploads/rhythm-logo-dark.png" alt="Rides Director Photo" style="width: 200px; height: auto; display: block; margin: 10px auto;">
+                        <!-- Add more social media icons as needed -->
+                    </div>
                 </div>
-                </div>
-            <a href="https://www.tripadvisor.com/Attraction_Review-g321549-d23659306-Reviews-Rhythm_Rides-Niseko_cho_Abuta_gun_Hokkaido.html" class="button"><i style="font-size:24px" class="fa">&#xf262;</i>   TripAdvisor</a>
-        </div>
+            </div>
+            <div  class='social-media'>
+                <a href="https://www.instagram.com/rhythmjapan/" class="fa fa-instagram"></a>
+                <a href="https://www.tripadvisor.com/Attraction_Review-g321549-d23659306-Reviews-Rhythm_Rides-Niseko_cho_Abuta_gun_Hokkaido.html" class="button"><i style="font-size:24px" class="fa">&#xf262;</i>   TripAdvisor</a>
+            </div>
     </div>
 </body>
 </html>

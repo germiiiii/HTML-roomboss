@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhythm Rides - Booking Information</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(https://www.rhythmjapan.com/wp-content/uploads/fixed.jpg);
+      background-size: auto;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffffc9;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .content {
+      margin-top: 20px;
+    }
+    .content h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: black;
+      color: aliceblue;
+      margin-left: -17px;
+    }
+    .content ul,
+    .content ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .content li {
+      margin-bottom: 5px;
+      position: relative; /* Needed for pseudo-element */
+      padding-top: 3px;
+      margin-top: 3px;
+    }
+    .content li:before {
+      content: "☛"; /* Decoration content */
+      font-size: 12px;
+      color: #f00000; /* Orange color */
+      position: absolute; /* Position the decoration */
+      left: -15px; /* Adjust horizontal position */
+    }
+    .important {
+      font-weight: bold;
+    }
+    .link {
+      color: #333;
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .ape {
+      max-width: 200px;
+      margin-bottom: 500px;
+    }
+    .footer p {
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="https://www.rhythmjapan.com/wp-content/uploads/image-removebg-preview.png"></h1>
+    </div>
+    <div class="content">
+        <div class="container">
+        <h3>Payment Terms</h3>
+      <ul>
+        <li>20% deposit required within 7 days of booking.</li>
+        <li>Full remaining balance due 14 days before lesson/tour.</li>
+      </ul>
+      <h3>Cancellation Policy</h3>
+      <ul>
+        <li class="important">Up to 7 days prior: Full refund (any reason).</li>
+        <li>7-48 hours prior: 20% cancellation fee.</li>
+        <li>Less than 48 hours: 100% cancellation fee.</li>
+      </ul>
+      <p>For illness or injury, a valid medical certificate allows rescheduling or a refund for future lessons. We must be notified before the new lesson starts and receive the report within 24 hours of cancellation.</p>
+      <p>We reserve the right to cancel reservations that don't meet our terms or haven't been paid by the due date.</p>
+      <p>By proceeding, you agree to all Rhythm Rides <a href="https://www.rhythmjapan.com/rhythm-rides/terms-conditions/" target="_blank" class="link">terms and conditions</a>.</p>
+    </div>
+    <im class="footer">
+      <p>We look forward to your visit to Niseko!</p>
+          </div>
+  </div>
+</body>
+</html>
